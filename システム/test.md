@@ -28,7 +28,7 @@ skinparam class {
         reg_date
     }
 
-    entity "購入テーブル" as order <d_purchase> <<T,TRANSACTION_MARK_COLOR>> MAIN_ENTITY {
+    entity "購入テーブル" as order <d_purchase> <<T,TRANSACTION_MARK_COLOR>>  {
         + order_id [PK]
         --
         # customer_code [FK]
@@ -37,7 +37,7 @@ skinparam class {
     }
 
 
-    entity "購入詳細テーブル" as order_detail <d_purchase_detail> <<T,TRANSACTION_MARK_COLOR>> MAIN_ENTITY {
+    entity "購入詳細テーブル" as order_detail <d_purchase_detail> <<T,TRANSACTION_MARK_COLOR>> {
         + order_id   [PK]
         + detail_id  [PK]
         --
